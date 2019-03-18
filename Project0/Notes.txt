@@ -1,2 +1,4 @@
 Submit50 instructions
-https://cs50.readthedocs.io/submit50/       
+https://cs50.readthedocs.io/submit50/      
+
+Submit50 not working over Windows
