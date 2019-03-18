@@ -1,0 +1,30 @@
+/* Should be added to variables.scss to keep a single styles set*/
+
+.button:hover  {
+    border-color: red;
+    background-color: yellow;
+}
+
+.copyright {
+    font-size: small;
+}
+
+/* links in the middle of text (like sign in)*/
+.plink {
+    color: blue
+}
+
+.sectionTitle {
+    color: green;
+}
+
+.dropdown {
+    background-color: transparent;
+    width: 100%;
+}
+
+a:hover {
+    background-color: lightcyan;
+}
+ 
+ 

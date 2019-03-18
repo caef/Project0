@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html>
+<!-- Should be implemented using a layout HTML that includes the head common to all screens. Not here because requires Javascript -->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- as an alternative variables.css may be used -->
+    <link rel="stylesheet" href="variables.min.css" />
+    <style>
+        
+        #albumSearch:hover {
+            color: red;
+        }
+        th button:hover {
+            color: red;
+        }
+    </style>
+
+    <title>My Music Manager</title>
+</head>
+<body>
+    <!-- NAVIGATION BAR fixed in the top -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light " style="background-color: lightcyan">
+        <!-- brand usually set using navbar-brand -->
+        <a class="h4" href="#">My Music Manager</a>
+        <div class="h5" style="padding-left: 20px; padding-top: 4px;">Albums</div>
+
+        <!-- 3 bars button applied to the navbar links -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav" style="padding-left: 40px">
+            <ul class="navbar-nav" >
+                <li class="nav-item">
+                    <a id="opt" class="nav-link navb-action" href="index.html"  >Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="artists.html">Artists</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="newAlbum.html">New Album</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- PAGE CONTENT -->
+    <br /><br />
+    <div>
+        <div class="input-group row" style="padding-left: 30px; padding-bottom: 15px;">
+            <div style="padding-right: 20px">Search By</div>
+            <div>
+                <input type="text" class="form-control inpt-fields" placeholder="Title" />
+                <input type="text" class="form-control inpt-fields" placeholder="Artist" />
+            </div>
+            <div style="padding-left: 30px">
+                <button id="albumSearch" class="but-search" href="#">Search</button>
+            </div>
+        </div>
+    </div>
+    <br />
+    <!-- Table will be actually filled on the server -->
+    <div class="container">
+        <table class="table table-sm table-responsive table-striped">
+            <thead>
+                <tr>
+                    <th scope="col"><button name="header" href="#">Title</button></th>
+                    <th scope="col"><button href="#">Genre</button></th>
+                    <th scope="col"><button href="#">Artist</button></th>
+                    <th scope="col"><button href="#">Year</button></th>
+                    <th scope="col"><button href="#">Media</button></th>
+                </tr>
+            </thead>
+            <tbody class="">
+                <tr>
+                    <td scope="row">Concierto Latinoamericano</td>
+                    <td>Folk</td>
+                    <td>Berta Rojas</td>
+                    <td>2001</td>
+                    <td>CD</td>
+                    <td><img src="images\img1.jpg" class="pics" /></td>
+                </tr>
+                <tr>
+                    <td scope="row">Devil's dance</td>
+                    <td>Classic</td>
+                    <td>Gil Shaham</td>
+                    <td>2001</td>
+                    <td>LP</td>
+                    <td><img src="images\img4.jpg" class="pics" /></td>
+                </tr>
+                <tr>
+                    <td scope="row">300 Years of Guitar Masterpieces</td>
+                    <td>Classic</td>
+                    <td>Manuel Barrueco</td>
+                    <td>2001</td>
+                    <td>CD</td>
+                    <td><img src="images\img2.jpg" class="pics" /></td>
+                </tr>
+                <tr>
+                    <td scope="row">The Flight of the Cosmic Hippo</td>
+                    <td>Jazz</td>
+                    <td>Bela Fleck</td>
+                    <td>2001</td>
+                    <td>CD</td>
+                    <td><img src="images\img5.jpg" class="pics" /></td>
+                </tr>
+                <tr>
+                    <td scope="row">Cats</td>
+                    <td>Theater</td>
+                    <td>Andrew Loyd Weber</td>
+                    <td>1996</td>
+                    <td>Stream</td>
+                    <td><img src="images\img6.jpg" class="pics" /></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="container body-content">
+        <hr />
+        <footer>
+            <br /><br />
+            <p><div class="copyright">@Copyright 2018 - Carlos Esteva</div></p>
+        </footer>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!--       required by Navbar -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
+

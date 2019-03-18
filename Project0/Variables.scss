@@ -1,0 +1,96 @@
+$brand-color: red;
+$navbar-actions-color: blue;
+$headings-color: blue;
+$input-label-color: Gray;
+$smallPictureWidth: 30%;
+$tablePictureSize: 40px;
+$maxTablePictureSize: 50px;
+
+
+.inpt-label {
+    font-weight: bold; 
+    padding-bottom: 3px;
+    padding-top: 10px;
+    color: $input-label-color
+}
+
+.inpt-fields {
+    width: 300px;
+    height: 28px;
+    color: blue;
+    border-color: lightblue;
+}
+
+/* definition for all buttons */
+.but-action {
+    background-color: lightcyan;
+    width: 120px;
+    color: blue;
+}
+
+/* specific buttons*/
+.but-search {
+    @extend .but-action;
+}
+
+.but-save {
+    @extend .but-action;
+    color: black;
+}
+
+/* for brand*/
+.h4 {
+    color: $brand-color;
+}
+
+/* Additional spaces before items in navbar menu*/
+nav {
+    div {
+        ul {
+            li {
+                padding-left: 10px;
+            }
+        }
+    }
+}
+
+/* color for navbar actions*/
+#navbarNav a {
+    color: $navbar-actions-color;
+
+}
+
+/* pictures in table */
+.pics {
+    max-width: $maxTablePictureSize;
+    height: auto;
+    width: $tablePictureSize;
+}
+
+.smallPics {
+    max-width: 150px;
+    height: auto;
+    width: $smallPictureWidth;
+}
+
+/* headinga for tables */
+thead {
+    tr {
+        th {
+            button {
+                color: $headings-color;
+                border: none;
+                background-color: transparent;
+                font-weight: 500;
+                height: 16px;
+
+            }
+        }
+    }
+}
+
+tbody {
+    tr {
+        height: 13px;
+    }
+}

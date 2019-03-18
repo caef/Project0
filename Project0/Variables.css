@@ -1,0 +1,55 @@
+﻿.inpt-label {
+  font-weight: bold;
+  padding-bottom: 3px;
+  padding-top: 10px;
+  color: Gray; }
+
+.inpt-fields {
+  width: 300px;
+  height: 28px;
+  color: blue;
+  border-color: lightblue; }
+
+/* definition for all buttons */
+.but-action, .but-search, .but-save {
+  background-color: lightcyan;
+  width: 120px;
+  color: blue; }
+
+/* specific buttons*/
+.but-save {
+  color: black; }
+
+/* for brand*/
+.h4 {
+  color: red; }
+
+/* Additional spaces before items in navbar menu*/
+nav div ul li {
+  padding-left: 10px; }
+
+/* color for navbar actions*/
+#navbarNav a {
+  color: blue; }
+
+/* pictures in table */
+.pics {
+  max-width: 50px;
+  height: auto;
+  width: 40px; }
+
+.smallPics {
+  max-width: 150px;
+  height: auto;
+  width: 30%; }
+
+/* headinga for tables */
+thead tr th button {
+  color: blue;
+  border: none;
+  background-color: transparent;
+  font-weight: 500;
+  height: 16px; }
+
+tbody tr {
+  height: 13px; }
